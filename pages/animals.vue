@@ -88,18 +88,23 @@
             a{
                 position: absolute;
                 inset: 0;
-                &:hover{
-                color: $primary_color;
+                &:hover,
+                &:focus-within{
+                  color: $primary_color;
+                  .previewImg{
+                    transform: scale(1.1);
+                  }
                 }
                 .previewImg{
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                color: transparent;
-                object-fit: cover;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  color: transparent;
+                  object-fit: cover;
+                  transition: .3s ease;
                 }
                 h2{
                 position: absolute;
