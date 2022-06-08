@@ -2,13 +2,13 @@
   <main>
     <div class="mainTitle">
       <h1 data-aos="fade-right">
-        <span v-for="(title,i) in $datas.page.about.title" :key="i">
-          {{title}}
+        <span>
+          {{contentData.title}}
         </span>
       </h1>
     </div>
     <section class="content" data-aos="fade-up">   
-        <span v-for="(content, i) in $datas.page.about.content" :key="i">
+        <span v-for="(content, i) in contentData.content" :key="i">
             <h2 v-if="content.type == 'h2'">
               {{content.msg}}
             </h2>
@@ -16,10 +16,7 @@
               {{content.msg}}
             </h3>
             <p v-if="content.type == 'p'">
-              <span v-for="(msg, i) in content.msg" :key="i">
-                <span v-if="msg.type=='txt'" class="txt">{{msg.msg}}</span>
-                <a v-if="msg.type=='href'" :href="msg.href" target="_blank">{{msg.msg}}</a>
-              </span>
+              {{content.msg}}
             </p>
         </span>
     </section>
@@ -31,20 +28,50 @@
 <script>
   export default {
     created(){
-      this.setSlider();
+        this.setupData();
+        this.setSlider();
+    },
+    data() {
+        return {
+            contentData: {
+                title: '...',
+                content: []
+            }
+        }
     },
     methods: {
       setSlider(){
-        this.$datas.slider.interval = 10000;
-        let newSliderImgs = [];
-        Object.entries(this.$datas.images).forEach(imgObj => {
-          let key = imgObj[0]
-          let imgs = imgObj[1]
-          newSliderImgs = newSliderImgs.concat(...imgs.map(e => `/imgs/${e}`))
-        });
-        this.$datas.slider.images = this.$datas.fun.shuffle(newSliderImgs);
-        this.dots = newSliderImgs.length;
+            this.$datas.slider.interval = 10000;
+            let newSliderImgs = [];
+            let imgs = this.$datas.images[this.$route.params.id]
+            newSliderImgs = newSliderImgs.concat(...imgs.map(e => `/imgs/${e}`))
+            this.$datas.slider.images = this.$datas.fun.shuffle(newSliderImgs);
+            this.dots = newSliderImgs.length;
       },
+      setupData(){
+            if(!this.$datas.images[this.$route.params.id]){
+                this.$router.push('/')
+            }
+            fetch(`/animal/${this.$route.params.id}.json`)
+                .then(function(response) {
+                if (!response.ok) {
+                    throw Error(response.statusText);
+                }
+                return response;
+            }).
+            then(response => response.json())
+            .then(data => {
+                if(!data){
+                    this.$datas.fun.toast(this, 'Dieses Tier enthält noch keine genaueren Informationen.', 10000)
+                    return this.$router.push('/animals');
+                }
+                this.contentData = data;
+            })
+            .catch(e => {
+                this.$datas.fun.toast(this, 'Dieses Tier enthält noch keine genaueren Informationen.', 10000)
+                this.$router.push('/animals')
+            });
+      }
     }
   }
 </script>

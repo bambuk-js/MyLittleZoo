@@ -1,0 +1,33 @@
+{
+    "title": "Gepard",
+    "content": [
+        {
+            "type": "p",
+            "msg": "Der Gepard [ˈgeːpart/geˈpart] (Acinonyx jubatus) ist ein hauptsächlich in Afrika verbreitetes Raubtier, das zur Familie der Katzen gehört. Die in ihrem Jagdverhalten hoch spezialisierten Geparde sind die schnellsten Landtiere der Welt. Damit verbunden gibt es in Gestalt und Körperbau deutliche Unterschiede zu anderen Katzenarten, weshalb dem Gepard traditionell eine Sonderstellung in der Verwandtschaft eingeräumt wurde. Genetische Untersuchungen zeigten jedoch, dass diese entwicklungsgeschichtlich nicht gerechtfertigt ist; die nächsten Verwandten des Gepards sind amerikanische Katzen (Pumas)."
+        },
+        {
+            "type": "h2",
+            "msg": "Merkmale"
+        },
+        {
+            "type": "p",
+            "msg": "Das Gepardfell hat eine goldgelbe Grundfarbe, wobei die Bauchseite meist deutlich heller ist. Es ist mit schwarzen Flecken übersät, die deutlich kleiner sind als die eines Leoparden und keine Rosetten bilden. Das Gesicht ist dunkler und ungefleckt, trägt aber zwei schwarze Streifen, die von den Augen zu den Mundwinkeln laufen (Tränenstreifen)."
+        },
+        {
+            "type": "p",
+            "msg": "In Bezug auf die Fleckung ähnelt der Gepard zwar dem Leoparden, in seiner Gestalt unterscheidet er sich jedoch beträchtlich von ihm wie auch von allen anderen Katzen. Geparde haben extrem lange, dünne Beine und einen sehr schlanken Körper, der dem eines Windhundes sehr ähnelt. Der Kopf ist klein und rund, der Schwanz lang. Die Pfoten tragen dicke, schuppige Sohlen; die Krallen sind nur bedingt einziehbar (daher der Gattungsname). Aufgrund seines Körperbaus ist der Gepard das schnellste Landtier der Welt. Er erreicht im Lauf bis zu 93 km/h[2], kann diese hohe Geschwindigkeit aber nur etwa ein bis zwei Sekunden durchhalten. Die durchschnittliche Spitzengeschwindigkeit des Gepards beim Sprint beträgt mit 53,11 km/h deutlich weniger als die höchste bisher gemessene, dies wird mit dem Erhalten einer möglichst hohen Manövrierfähigkeit erklärt.[3] Die Anatomie des Gepards ist auch in weiteren Punkten auf Schnelligkeit ausgelegt: seine Nasengänge sind erheblich verbreitert, so dass wenig Platz für das Gebiss bleibt, das gegenüber anderen Katzen stark verkleinert und damit eine relativ schwache Waffe ist. Auch Lungen, Bronchien und Nebennieren sind proportional stark vergrößert. "
+        },
+        {
+            "type": "p",
+            "msg": "Ein Gepard erreicht eine Kopf-Rumpf-Länge von 150 cm, hinzu kommen 70 cm Schwanz. Die Schulterhöhe beträgt 80 cm. Trotz dieser stattlichen Größe bringt er es nur auf ein Gewicht von 60 kg."
+        },
+        {
+            "type": "p",
+            "msg": "Nach neueren Untersuchungen gibt es nur zwei Unterarten oder gar nur zwei Populationen, nämlich den Afrikanischen und den Asiatischen Gepard. Zugleich stellte man eine auffällig niedrige genetische Variabilität mit Inzuchtraten fest, die beinahe denen von Labormäusen entsprechen; demzufolge vermutete man, die Geparde könnten auch gegenüber Krankheiten und Umweltveränderungen anfällig sein. Es ist jedoch noch nicht geklärt, ob diese genetische Einförmigkeit in freier Wildbahn einen wesentlichen Nachteil für die Tiere bedeutet. "
+        },
+        {
+            "type": "p",
+            "msg": "Als weitgehend gesichert gilt, dass man ohne Abstoßungsreaktion Gewebe unter Geparden übertragen kann – etwas, das sonst nur bei genetischer Identität für möglich gehalten wurde (→ eineiige Zwillinge). Durch genetische und immunologische Untersuchungen konnte ermittelt werden, dass die heutigen Geparde Süd- und Ostafrikas wahrscheinlich alle von einer sehr kleinen Stammgruppe abstammen (→ genetischer Flaschenhals), die vor etwa 10.000 Jahren gelebt hat.[4][5] Damals starb der Amerikanische Gepard aus, und der Gewöhnliche Gepard entging offenbar nur knapp diesem Schicksal. Er breitete sich danach in den Savannen Afrikas und Asiens wieder aus (→ Purging) und konnte daher bis in unsere Zeit überleben. Diese Untersuchung genießt in Fachkreisen hohes Ansehen und wird mittlerweile als klassisches Beispiel in der Populationsgenetik benutzt."
+        }
+    ]
+}

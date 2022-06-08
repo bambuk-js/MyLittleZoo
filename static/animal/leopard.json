@@ -1,0 +1,41 @@
+{
+    "title": "Leopard",
+    "content": [
+        {
+            "type": "p",
+            "msg": "Der Leopard (Panthera pardus), auch Panther oder Panter, ist eine Art aus der Familie der Katzen, die in Afrika und Asien verbreitet ist. Darüber hinaus kommt sie auch im Kaukasus vor. Der Leopard ist nach Tiger, Löwe und Jaguar die viertgrößte Großkatze. Auf der Roten Liste gefährdeter Arten der IUCN sind Leoparden in der Vorwarnliste als „Vulnerable“ (gefährdet) klassifiziert.[1] Das Wort Leopard stammt über das lateinische leopardus vom altgriechischen λεόπαρδος (leopardos) ab, das sich aus λέων (leon) für Löwe und πάρδος"
+        },
+        {
+            "type": "h2",
+            "msg": "Merkmale"
+        },
+        {
+            "type": "p",
+            "msg": "Maße und Gewicht des Leoparden sind innerhalb des großen Verbreitungsgebietes sehr unterschiedlich. Generell sind waldbewohnende Leoparden meist kleiner und gedrungener, die der offenen Lebensräume in der Regel schlanker und größer. Der Leopard wird 90–190 cm lang, den 60–110 cm langen Schwanz nicht mitgerechnet. Männliche Leoparden wiegen etwa 40–90 kg und haben eine Schulterhöhe von 70–80 cm. Weibchen sind etwa halb so groß und wiegen nur etwa 30–60 kg. Kleine Weibchen messen nur 45 cm an der Schulter. In der Kapregion in Südafrika wiegen Leoparden oft nur 20–30 kg."
+        },
+        {
+            "type": "h3",
+            "msg": "Fellzeichnung"
+        },
+        {
+            "type": "p",
+            "msg": "Die Fellzeichnung ist je nach Unterart oft sehr verschieden, aber auch innerhalb eines Gebietes treten individuelle Unterschiede auf. Fast immer zeigt das Fell Rosetten, die besonders in Längsrichtung des Rückens reihenförmig angeordnet sind. An der Brust und am unteren Hals findet man häufig statt nebeneinander stehender Rosetten Erdbeerflecken, die in einer Richtung angeordnet sind und wie Halsbänder wirken. An der Oberseite des langen Schwanzes setzen sich die Rosetten entlang der Mittellinie fort. Zum Schwanzende werden die Rosetten immer weniger ausgeprägt, können aber manchmal noch zu mehreren Querringen verschmelzen. Die Schwanzunterseite ist allerdings zum Ende hin sehr hell bis weiß. Der Bauch und die oberen Beininnenseiten sind ebenfalls frei von Rosetten und weiß, gelblich-weiß oder in grau übergehend gefärbt. Weiter zu den Pranken hin sind Vollflecken zu finden, die nach unten zu immer kleiner werden. Am Kopf und oberen Hals und Nacken sind ebenfalls nur schwarze Vollflecken vorhanden. Waldleoparden sind im Allgemeinen intensiver gefärbt als Leoparden offener Landschaften. "
+        },
+        {
+            "type": "h2",
+            "msg": "Schwarze Panther"
+        },
+        {
+            "type": "p",
+            "msg": "In großen Höhenlagen und im tropischen Regenwald findet man manchmal Schwärzlinge, die auch Schwarzer Panther genannt werden. Die Ausprägung des schwarzen Fells ist erblich und wird über ein einziges Gen (monogenetisch) rezessiv vererbt. Damit kann die Erbanlage auch bei einem normal gefleckten Leoparden vorhanden sein oder es können in einem Wurf Schwärzlinge neben normal gefärbten Jungtieren vorkommen. Bei schräg einfallendem Licht kann man jedoch auch bei schwarzen Leoparden die typischen Rosetten erkennen. In einigen Gebieten, etwa auf der Malaiischen Halbinsel, sind bis zu 50 Prozent aller Leoparden schwarz. In Afrika traten Schwärzlinge am häufigsten im Äthiopischen Bergland auf. 2019 wurden Aufnahmen von schwarzen Leoparden in Afrika veröffentlicht, bei der von Medien fälschlicherweise behauptet wurde, dies sei erstmals seit 1909 eine solche Sichtung in Afrika.[3]"
+        },
+        {
+            "type": "h2",
+            "msg": "Sinnesorgane"
+        },
+        {
+            "type": "p",
+            "msg": "Die Ohren sind gerundet. Der Gehörsinn ist ausgezeichnet entwickelt. Leoparden können sehr hohe, für Menschen nicht mehr hörbare Frequenzen bis zu 45.000 Hertz wahrnehmen. Die Augen sind nach vorn gerichtet und weisen eine breite Überschneidung der Sehfelder auf. Das ermöglicht ihnen ein ausgezeichnetes räumliches Sehen. Bei Tag entspricht das Sehvermögen eines Leoparden in etwa dem eines Menschen, in der Nacht verfügt der Leopard jedoch über ein fünf- bis sechsfach besseres Sehvermögen: Leoparden können die runde Pupille sehr weit öffnen, sodass mehr Licht ins Auge gelangen kann; weiterhin besitzen Leoparden wie alle Katzen eine reflektierende Schicht hinter der Netzhaut, das sogenannte Tapetum lucidum, das durch Rückspiegelung die Lichtausbeute steigert. Auch der Geruchssinn ist hervorragend ausgeprägt."
+        }
+    ]
+}

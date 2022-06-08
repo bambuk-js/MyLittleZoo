@@ -124,6 +124,14 @@ export default ({ app }, inject) => {
             x: event.pageX,
             y: event.pageY
           }
+        },
+        toast(obj, msg, duration=2000){
+          obj.$buefy.snackbar.open({
+            message: msg,
+            queue: false,
+            type: 'is-black',
+            duration: duration
+          })
         }
       }
     })
