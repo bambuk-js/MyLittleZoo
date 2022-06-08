@@ -71,4 +71,13 @@
             box-shadow: 0 0 5rem 5rem rgba($color: $primary_bgcolor, $alpha: .8);
         }
     }
+
+    @media only screen and (max-width: 900px) {
+        header{
+            max-width: 100%;
+            nav{
+                display: none;
+            }
+        }
+    }
 </style>

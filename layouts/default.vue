@@ -49,6 +49,7 @@ export default {
 		flex: 1 1 auto;
 		min-height: 100vh;
 		max-width: 1600px;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}

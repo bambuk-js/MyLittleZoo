@@ -52,7 +52,7 @@
             cursor: default;
             position: fixed;
             right: $space;
-        bottom: $space;
+            bottom: $space;
             max-width: 300px;
             min-width: 300px;
             min-height: 300px;
@@ -96,5 +96,22 @@
             span .txt{
                 text-decoration: none;
             }
+    }
+
+    @media only screen and (max-width: 900px){
+        button{
+            right: $spaceMobile;
+            bottom: $spaceMobile;
         }
+        .message{
+            right: $spaceMobile;
+            bottom: $spaceMobile;
+            max-height: calc(100vh - ($spaceMobile*2));
+            padding: $spaceMobile;
+            &.isOpen{
+                max-height: calc(100vh - ($spaceMobile*2));
+                padding: $spaceMobile;
+            }
+        }
+    }
 </style>

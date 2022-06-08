@@ -1,28 +1,28 @@
 <template>
-  <main>
-    <div class="mainTitle">
-      <h1 data-aos="fade-right">
-        <span>
-          {{contentData.title}}
-        </span>
-      </h1>
-    </div>
-    <section class="content" data-aos="fade-up">   
-        <span v-for="(content, i) in contentData.content" :key="i">
-            <h2 v-if="content.type == 'h2'">
-              {{content.msg}}
-            </h2>
-            <h3 v-if="content.type == 'h3'">
-              {{content.msg}}
-            </h3>
-            <p v-if="content.type == 'p'">
-              {{content.msg}}
-            </p>
-        </span>
-    </section>
-    <Copyright :message="$datas.page.about.copyright"/>
-    <Dots />
-  </main>
+    <main>
+        <div class="mainTitle">
+            <h1 data-aos="fade-right">
+                <span>
+                {{contentData.title}}
+                </span>
+            </h1>
+        </div>
+        <section class="content" data-aos="fade-up">   
+            <span v-for="(content, i) in contentData.content" :key="i">
+                <h2 v-if="content.type == 'h2'">
+                    {{content.msg}}
+                </h2>
+                <h3 v-if="content.type == 'h3'">
+                    {{content.msg}}
+                </h3>
+                <p v-if="content.type == 'p'">
+                    {{content.msg}}
+                </p>
+            </span>
+        </section>
+        <Copyright :message="$datas.page.about.copyright"/>
+        <Dots />
+    </main>
 </template>
 
 <script>
@@ -84,21 +84,21 @@
     flex: 1 1 auto;
     flex-direction: column;
     .mainTitle {
-      height: 60vh;
-      h1{
-        position: sticky;
-        top: 0px; 
+        height: 60vh;
+        h1{
+            position: sticky;
+            top: 0px; 
 
-        display: flex;
-        flex-direction: column;
-        // flex-wrap: wrap;
-        font-size: 6rem;
-        color: $primary_color;
-        span{
-          white-space: nowrap;
-          text-shadow: 0 0 10px rgba($color: $primary_bgcolor, $alpha: .8);
+            display: flex;
+            flex-direction: column;
+            // flex-wrap: wrap;
+            font-size: 6rem;
+            color: $primary_color;
+            span{
+            white-space: nowrap;
+            text-shadow: 0 0 10px rgba($color: $primary_bgcolor, $alpha: .8);
+            }
         }
-      }
     }
     .content{
         // margin-top: 40vh;
@@ -109,13 +109,13 @@
         margin-right: $space*2;
         padding: $space;
         span{
-          color: $primary_color;
-          p{
-            margin-bottom: $space;
-          }
-          h2, h3, p{
-            color: $primary_color;  
-          }
+                color: $primary_color;
+            p{
+                margin-bottom: $space;
+            }
+            h2, h3, p{
+                color: $primary_color;  
+            }
         }
     }
     .dots{
@@ -124,6 +124,35 @@
         right: $space;
         top: 50%;
         transform: translateY(-50%);
-      }
-  }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    main{
+        .mainTitle{
+            h1{
+                font-size: 3rem;
+            }
+        }
+        .content{
+            padding: $spaceMobile;
+            margin-right: $spaceMobile*2;
+            span{
+				h2{
+					font-size: 2rem;
+				}
+				h3{
+					font-size: 1.5rem;
+				}
+                p{
+                    margin-bottom: $spaceMobile;
+					font-size: 1.1rem;
+                }
+            }
+        }
+        .dots{
+			right: $spaceMobile;
+		}
+    }
+}
 </style>

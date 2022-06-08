@@ -7,22 +7,13 @@ let defaultCopyright = [
   },
   {
     type: 'href',
-    href: 'https://www.wikipedia.org/',
-    msg: 'Wikipedia.org'
+    href: 'https://pixabay.com',
+    msg: 'pixabay.com'
   },
   {
     type: 'txt',
-    msg: ' unter '
-  },
-  {
-    type: 'href',
-    href: 'https://creativecommons.org/licenses/',
-    msg: 'CC BY-SA'
-  },
-  {
-    type: 'txt',
-    msg: ' veröffentlicht.'
-  },
+    msg: ' für Freie kommerzielle Nutzung freigegeben.'
+  }
 ];
 
 export default ({ app }, inject) => {
@@ -42,10 +33,6 @@ export default ({ app }, inject) => {
         {
           title: "Über",
           href: "/about",
-        },
-        {
-          title: "Kontakt",
-          href: "/contact",
         },
         {
           title: "Impressum",
