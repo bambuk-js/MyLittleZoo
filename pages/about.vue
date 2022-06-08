@@ -30,6 +30,11 @@
 
 <script>
   export default {
+    head(){
+        return {
+            title: 'MyLittleZoo | Über'
+        }
+    },
     created(){
     	this.setSlider();
     },

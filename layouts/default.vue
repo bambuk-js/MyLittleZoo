@@ -2,6 +2,7 @@
   <div class="body" @mouseover="e => updateCordinates(e)">
 	<Header />
     <Nuxt />
+	<Footer />
 	<Slider :interval="2500"/>
   </div>
 </template>

@@ -22,6 +22,11 @@
 
 <script>
   export default {
+    head(){
+      return {
+        title: 'MyLittleZoo | Tiere'
+      }
+    },
     created(){
       this.setSlider();
     },

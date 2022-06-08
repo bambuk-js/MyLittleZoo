@@ -31,7 +31,12 @@ export const array = [
     msg: [
       {
         type: "txt",
-        msg: "E-Mail: info@mylittlezoo.com",
+        msg: "E-Mail: ",
+      },
+      {
+        type: "href",
+        href: "mailto:info@mylittlezoo.com",
+        msg: "info@mylittlezoo.com",
       },
     ],
   },

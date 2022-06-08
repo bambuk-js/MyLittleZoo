@@ -27,6 +27,11 @@
 
 <script>
   export default {
+    head(){
+        return {
+            title: 'MyLittleZoo | '+this.contentData.title
+        }
+    },
     created(){
         this.setupData();
         this.setSlider();

@@ -3,21 +3,31 @@
         <div class="logo">
             <img :src="$datas.logo" alt="Website Logo" >
         </div>
-        <nav>
+        <nav :class="(menuOpen)?'active':''">
             <ul>
-                <li v-for="(menuItem,i) in $datas.menu" :key="i">
+                <li v-for="(menuItem,i) in $datas.menu" :key="i" @click="menuOpen=false">
                     <router-link :to="menuItem.href" :class="(menuItem.href == $nuxt.$route.path)?'active':''">
                         {{menuItem.title}}
                     </router-link>
                 </li>
             </ul>
         </nav>
+        <button v-if="!menuOpen" class="burger" @click="menuOpen=true">
+            <b-icon icon="menu" size="is-large"></b-icon>
+        </button>
+        <button v-if="menuOpen" class="burger" @click="menuOpen=false">
+            <b-icon icon="close" size="is-large"></b-icon>
+        </button>
     </header>
 </template>
 
 <script>
     export default {
-        
+        data() {
+            return {
+                menuOpen: false
+            }
+        },
     }
 </script>
 
@@ -61,6 +71,9 @@
                 }
             }
         }
+        .burger{
+                display: none;
+            }
         &::before{
             content: '';
             position: absolute;
@@ -76,7 +89,43 @@
         header{
             max-width: 100%;
             nav{
-                display: none;
+                ul{
+                    display: none;
+                }
+                &.active{
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    z-index: 998;
+                    background-color: $primary_bgcolor;
+                    width: 100%;
+                    height: 100%;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        li{
+                            margin: $spaceMobile;
+                        }
+                    }
+                }
+            }
+            .burger{
+                display: flex;
+                padding: 0.5rem;
+                background: transparent;
+                border: 0px;
+                position: absolute;
+                right: $spaceMobile;
+                top: $spaceMobile;
+                cursor: pointer;
+                z-index: 999;
+                span{
+                    color: #fff;
+                }
+                &:focus-within{
+                    border: 2px solid $primary;
+                    border-radius: 3px;
+                }
             }
         }
     }
