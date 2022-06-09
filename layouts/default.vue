@@ -56,5 +56,41 @@ export default {
 	}
 	main{
 		padding: $space;
+		.mainTitle{
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			h1{
+				margin: $space 0;
+				padding: $space;
+                border-radius: 15px;
+				flex: 0 1 auto;
+				span{
+					text-shadow: 0px 0px 20px $primary !important;
+				}
+				&::before{
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					height: 80%;
+					width: 8px;
+					background-color: $primary;
+					border-radius: 5px;
+					box-shadow: 0px 0px 20px $primary;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 900px) {
+		main{
+			.mainTitle{
+				h1{
+					padding-left: $spaceMobile;
+				}
+			}
+		}
 	}
 </style>

@@ -1,6 +1,6 @@
 <template>
     <span>
-        <button @click="isOpen=true" :class="`${(isOpen)?'isOpen':''}`">
+        <button tabindex="0" @click="isOpen=true" :class="`${(isOpen)?'isOpen':''}`">
             <b-icon icon="copyright"></b-icon>
         </button>
         <div :class="`message ${(isOpen)?'isOpen':''}`">
@@ -8,7 +8,7 @@
                 <span v-if="msg.type=='txt'" class="txt">{{msg.msg}}</span>
                 <a v-if="msg.type=='href'" :href="msg.href" target="_blank">{{msg.msg}}</a>
             </span>
-            <button class="close" @click="isOpen=false">
+            <button tabindex="0" class="close" @click="isOpen=false">
                 <b-icon icon="close-circle-outline"></b-icon>
             </button>
         </div>

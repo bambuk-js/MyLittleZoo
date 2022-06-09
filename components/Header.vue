@@ -6,7 +6,7 @@
         <nav :class="(menuOpen)?'active':''">
             <ul>
                 <li v-for="(menuItem,i) in $datas.menu" :key="i" @click="menuOpen=false">
-                    <router-link :to="menuItem.href" :class="(menuItem.href == $nuxt.$route.path)?'active':''">
+                    <router-link :to="menuItem.href" :class="(menuItem.href == $nuxt.$route.path)?'active':''" tabindex="0">
                         {{menuItem.title}}
                     </router-link>
                 </li>

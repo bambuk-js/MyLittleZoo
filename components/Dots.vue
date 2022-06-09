@@ -1,6 +1,7 @@
 <template>
 	<div class="dots">
 		<div
+		tabindex="0"
 		v-for="i in $datas.slider.images.length" :key="i"
 		@click="$datas.slider.pos = i-1"
 		:class="`dot ${($datas.slider.pos==i-1)?'active':''}`">
