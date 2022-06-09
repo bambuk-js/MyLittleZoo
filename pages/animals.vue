@@ -150,9 +150,13 @@
                 font-size: 3rem;
             }
         }
-        .content{
-            padding: $spaceMobile;
-            margin-right: $spaceMobile*2;
+        .list{
+            padding: 0 0 $spaceMobile $spaceMobile;
+            // margin-right: $spaceMobile*2;
+			margin-right: 0;
+			li{
+				margin: $spaceMobile $spaceMobile 0 0;
+			}
             span{
 				h2{
 					font-size: 2rem;

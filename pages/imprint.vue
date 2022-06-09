@@ -153,6 +153,7 @@
         color: $primary_color;
         background-color: rgba($color: $primary_bgcolor, $alpha: .4);
         margin-right: $space*2;
+        // margin-right: 0;
         padding: $space;
         span{
           color: $primary_color;
@@ -194,7 +195,8 @@
         }
         .content{
             padding: $spaceMobile;
-            margin-right: $spaceMobile*2;
+            // margin-right: $spaceMobile*2;
+            margin-right: 0;
             span{
 				h2{
 					font-size: 2rem;

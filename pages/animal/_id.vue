@@ -141,7 +141,8 @@
         }
         .content{
             padding: $spaceMobile;
-            margin-right: $spaceMobile*2;
+            // margin-right: $spaceMobile*2;
+            margin-right: 0;
             span{
 				h2{
 					font-size: 2rem;

@@ -23,7 +23,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: $space/2;
+        padding: calc($space/2);
         p{
             margin-right: 10px;
             text-shadow: 0 0 15px $primary, 0 0 15px $primary, 0 0 15px $primary;
