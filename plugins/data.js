@@ -15,6 +15,30 @@ let defaultCopyright = [
     msg: ' für Freie kommerzielle Nutzung freigegeben.'
   }
 ];
+let animalCopyright = [
+  {
+    type: 'txt',
+    msg: 'Die Bilder wurden auf '
+  },
+  {
+    type: 'href',
+    href: 'https://pixabay.com',
+    msg: 'pixabay.com'
+  },
+  {
+    type: 'txt',
+    msg: ' für Freie kommerzielle Nutzung freigegeben. Der Text wurde von '
+  },
+  {
+    type: 'href',
+    href: 'https://www.wikipedia.org/',
+    msg: 'wikipedia.org'
+  },
+  {
+    type: 'txt',
+    msg: ' genommen. '
+  },
+];
 
 export default ({ app }, inject) => {
   inject(
@@ -46,7 +70,7 @@ export default ({ app }, inject) => {
         },
         animals: {
           title: ['Unsere Tiere'],
-          copyright: defaultCopyright,
+          copyright: animalCopyright,
           list: require('~/assets/content/animals.js').array
         },
         about: {
